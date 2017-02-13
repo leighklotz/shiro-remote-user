@@ -1,0 +1,15 @@
+# Sample RemoteUser configuration
+[main]
+remoteUserFilter = com.yahoo.shiro.remoteuser.filter.RemoteUserAuthenticationFilter
+remoteUserFilter.remoteUserHeaderName = X-Remote-User
+remoteUserFilter.remoteRolesHeaderName = X-Remote-Roles
+remoteUserRealm = com.yahoo.shiro.remoteuser.realm.RemoteUserRealm
+securityManager.realms = $remoteUserRealm
+
+sessionManager = org.apache.shiro.web.session.mgt.DefaultWebSessionManager
+securityManager.sessionManager = $sessionManager
+securityManager.sessionManager.globalSessionTimeout = 86400000
+
+[urls]
+/api/version = anon
+/** = remoteUserFilter
