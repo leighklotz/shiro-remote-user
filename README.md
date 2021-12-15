@@ -103,7 +103,7 @@ Copyright 2017, Yahoo Inc.
 Shiro-Remote-User is released under Apache 2.0 License.  See [LICENSE](LICENSE).
 
 ## Authors
-shiro-remote-user was written by Leigh Klotz <klotz@yahoo-inc.com>.
+shiro-remote-user was written by Leigh Klotz <klotz@klotz.me>.
 Shiro-remote-user is based on the tutorials [Securing Web Applications with Apache
 Shiro](http://shiro.apache.org/webapp-tutorial.html) and [Shiro JWT by Jaime
 Martinez](https://github.com/panchitoboy/shiro-jwt)
